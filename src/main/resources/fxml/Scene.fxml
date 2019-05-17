@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="position_finder" prefHeight="678.0" prefWidth="1214.0" style="-fx-background-color: rgb(244,244,244);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kevin.myodrum.FXMLController">
+    <children>
+      <JFXButton id="centerButton" buttonType="RAISED" contentDisplay="CENTER" layoutX="633.0" layoutY="591.0" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="161.0" style="-fx-background-color: rgb(81, 100, 174);" text="Center Your Position" textAlignment="CENTER" textFill="WHITE">
+      </JFXButton>
+      <Line endX="-20.0" endY="50.0" layoutX="957.0" layoutY="495.0" startX="35.0" strokeWidth="6.0" />
+      <Line endX="20.0" endY="50.0" layoutX="1030.0" layoutY="497.0" startX="-35.0" strokeWidth="6.0" />
+      <Line endY="100.0" layoutX="991.0" layoutY="400.0" scaleX="2.0" scaleY="2.0" strokeWidth="4.0" />
+      <Line endY="50.0" layoutX="522.0" layoutY="375.0" scaleX="2.0" scaleY="6.0" startY="20.0" strokeWidth="4.0" />
+      <Line endX="20.0" endY="50.0" layoutX="559.0" layoutY="451.0" startX="-35.0" strokeWidth="6.0" />
+      <Line endX="-20.0" endY="50.0" layoutX="484.0" layoutY="452.0" startX="35.0" strokeWidth="6.0" />
+      <Line endX="-5.0" endY="50.0" layoutX="820.0" layoutY="431.0" startX="35.0" strokeWidth="4.0" />
+      <Line endX="5.0" endY="50.0" layoutX="890.0" layoutY="432.0" startX="-35.0" strokeWidth="4.0" />
+      <Line endY="50.0" layoutX="854.0" layoutY="354.0" scaleX="1.5" scaleY="4.0" strokeWidth="4.0" />
+      <Line endX="-20.0" endY="50.0" layoutX="679.0" layoutY="489.0" startX="35.0" strokeWidth="6.0" />
+      <Line endX="20.0" endY="50.0" layoutX="754.0" layoutY="488.0" startX="-35.0" strokeWidth="6.0" />
+      <Line endY="50.0" layoutX="717.0" layoutY="436.0" scaleX="2.0" scaleY="3.0" strokeWidth="4.0" />
+      <Cylinder fx:id="snare" height="50.0" layoutX="717.0" layoutY="391.0" radius="50.0" rotate="-150.0" scaleX="2.0" scaleY="1.5" translateZ="-100.0">
+         <rotationAxis>
+            <Point3D x="1.0" />
+         </rotationAxis>
+      </Cylinder>
+      <Ellipse fx:id="crash" fill="#bbc410" layoutX="856.0" layoutY="271.0" radiusX="20.0" radiusY="7.0" scaleX="3.5" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="hihat_bottom" fill="#bbc410" layoutX="523.0" layoutY="304.0" radiusX="32.0" radiusY="7.0" scaleX="3.0" scaleY="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="hihat_top" fill="#bbc410" layoutX="523.0" layoutY="297.0" radiusX="32.0" radiusY="7.0" scaleX="3.0" scaleY="3.0" stroke="BLACK" strokeType="INSIDE" />
+      <Ellipse fx:id="ride" fill="#bbc410" layoutX="991.0" layoutY="332.0" radiusX="44.0" radiusY="14.0" scaleX="2.5" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" translateZ="50.0" />
+      <Circle layoutX="852.0" layoutY="268.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="522.0" layoutY="291.0" radius="4.0" scaleX="2.0" scaleY="2.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="991.0" layoutY="325.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+      <Cylinder fx:id="cylLeft" height="400.0" layoutX="699.0" layoutY="386.0" radius="10.0">
+         <rotationAxis>
+            <Point3D x="45.0" />
+         </rotationAxis>
+      </Cylinder>
+      <Cylinder fx:id="cylRight" height="400.0" layoutX="733.0" layoutY="386.0" radius="10.0">
+         <rotationAxis>
+            <Point3D x="45.0" />
+         </rotationAxis>
+      </Cylinder>
+      <JFXListView prefHeight="678.0" prefWidth="276.0" />
+    </children>
+</AnchorPane>
